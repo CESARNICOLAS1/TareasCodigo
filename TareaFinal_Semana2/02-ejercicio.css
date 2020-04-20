@@ -1,0 +1,82 @@
+*{
+margin: 0;
+box-sizing: border-box;
+
+}
+
+#cuerpo{
+    height: 100vh;   
+}
+
+#barra{
+    height: 5vh;
+    background-color: #FEFEDC;
+}
+
+#cabecera{
+    height: 25vh;
+    background-color: #FEDCFE;
+}
+
+#aside1{
+    background-color: #FEDCDC;    
+    height: 22vh;    
+}
+#aside2{
+    background-color: #DCFEDC;    
+    height: 22vh;    
+}
+#aside3{
+    background-color: #DCDCFE;    
+    height: 21vh;    
+}
+
+
+#seccion{
+    background-color: #DCFEFE;    
+    height: 65vh;
+}
+
+
+
+.wrapper{    
+    width: 40%;
+    float: left;
+}
+.wrapper2{
+
+    background-color: #DCFEFE;    
+    height: 65vh;
+    width: 60%;    
+    float: left;    
+}
+
+#pie{
+    background-color: #DCDCDC;
+    height: 5vh;
+    width: 100%;
+
+}
+
+.fix{
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

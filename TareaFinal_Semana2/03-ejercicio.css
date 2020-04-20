@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Importando y declarando una fuente */
+
+@font-face {
+    font-family: 'titilliumweb';
+    src: url('./TitilliumWeb-Light.ttf');
+}
+
+/* Importando y declarando una fuente */
+
+@font-face {
+    font-family: 'anton';
+    src: url('./Anton-Regular.ttf');
+}
+
+#cabecera {
+    background-color: #D4EADE;
+    width: 850px;
+    height: 325px;
+    position: relative;
+}
+
+#div1 {
+    background-color: #6DBCCD;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    height: 300px;
+    width: 750px;
+}
+
+#div2 {
+    background-color: #E82841;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    height: 70px;
+    width: 450px;
+    font-family: 'titilliumweb';
+    color: #F1A377;
+    font-size: 50px;
+}
+
+#parrafo2 {
+    padding: 0px 15px;
+}
+
+#parrafo1 {
+    width: 420px;
+    position: relative;
+    top: 10px;
+    left: 35px;
+    font-family: 'anton';
+    font-size: 75px;
+    color: #FFFFFF;    
+}
+
+#parrafo3 {
+    width: 225px;
+    height: 260px;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    background-color: #E8EF8F;
+    padding: 15px 20px 0px 40px;
+    font-size: 17px;
+    color: #9B995F;
+}
+
+#divultimo {
+    background-color: #323E4A;
+    position: absolute;
+    left: 600px;
+    bottom: 0px;
+    width: 225px;
+    height: 325px;
+    opacity: 0.8;
+}

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#cuerpo{
+    height: 100vh;
+}
+
+#barra_nav{
+background-color: #FEFEDC;
+height: 5vh;
+
+}
+
+#cabecera{
+    background-color: #FEDCFE;
+    height: 25vh;
+}
+
+#sidebar{
+    float: left;
+    background-color: #DCDCFE;
+    height: 50vh;
+    width: 40%;
+
+}
+
+#seccion{
+    background-color: #DCFEFE;
+    height: 50vh;
+    float: left;
+    width: 60%;
+}
+
+#Aside1{
+    background-color: #FEDCDC;
+    float: left;
+    height: 15vh;
+    width: 33%;
+}
+#Aside2{
+    background-color: #DCFEDC;
+    float: left;
+    height: 15vh;
+    width: 33%;
+}
+#Aside3{
+    background-color: #DCDCFE;
+    float: left;
+    height: 15vh;
+    width: 34%;
+}
+
+#pie{
+    background-color: #DCDCDC;
+    height: 5vh;
+    width: 100%;
+}
+.fix{
+clear: both;
+}
+
+
