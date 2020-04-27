@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importando y declarando una fuente */
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('./Montserrat-Light.ttf');
+}
+
+body {
+    background-color: #FFF8F6;
+}
+
+/*height 15vh*/
+
+header {
+    height: 15vh;
+}
+
+/*----------------------HEADER------------------------*/
+
+.div-wrapper {
+    float: left;
+    height: 100%;
+    width: 40%;
+}
+
+.div-wrapper2 {
+    float: right;
+    height: 100%;
+    width: 60%;
+}
+
+#division-primera {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#division-segunda {
+    width: 100%;
+    font-family: 'montserratlight';
+    height: 100%;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+ul>li>a {
+    text-decoration: none;
+}
+
+#login-inicial1 {
+    color: black;
+    font-weight: bolder;
+}
+
+#login-inicial2 {
+    color: orange;
+    font-weight: bolder;
+}
+
+#boton-pagina {
+    color: #106AFF;
+    font-weight: 600;
+    background-color: #FFF8F6;
+    border: 2px solid #106AFF;
+    display: block;
+    height: 25px;
+    width: 75px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/*-------------------------SECTION ---------------------- */
+
+.fix {
+    clear: both;
+}
+
+/*PRIMERA DIVISION*/
+
+#division-tres {
+    width: 50%;
+    height: 42vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#division-tres>p {
+    width: 300px;
+    font-family: 'montserratlight';
+    font-size: 40px;
+}
+
+#division-tres>p>span {
+    font-weight: 800;
+}
+
+/*SEGUNDA DIVISION*/
+
+#division-cuatro {
+    width: 50%;
+    height: 42vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagen-madre {
+    width: 330px;
+    height: 290px;
+}
+
+/*TERCERA DIVISION*/
+
+#division-cinco {
+    width: 50%;
+    height: 43vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagen-chico {
+    width: 200px;
+    height: 240px;
+}
+
+/*CUARTA DIVISION*/
+#division-seis {
+    width: 50%;
+    height: 43vh;
+    float: left;
+}
+
+#division-siete {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#parrafo-pequenio {
+    font-size: 10px;
+    width: 300px;
+    font-family: 'montserratlight';
+    font-weight: 600;
+}
+
+#division-ocho {
+    display: flex;
+    justify-content: space-evenly;
+    height: 18vh;
+}
+
+#division-nueve, #division-diez {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #171540;
+    font-family: 'montserratlight';
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+#uno, #dos {
+    color: white;
+    display: block;
+    font-size: 20px;
+}
+
+#boton-uno, #boton-dos {
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    color: white;
+    font-weight: 900;
+    font-size: 10px;
+}
+
+#span-uno, #span-dos {
+    font-size: 16px;
+}
+
+
+
+@media screen and (max-width:660px) {
+    #division-tres, #division-seis, #division-cinco {
+        width: 100%;
+    }
+    #division-cuatro {
+        width: 100%;
+        height: 60vh;
+    }
+    .div-wrapper, .div-wrapper2 {
+        width: 100%;
+    }
+}
