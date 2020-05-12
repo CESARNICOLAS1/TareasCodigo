@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ejemplo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <p>TABLA DE CUENTAS</p>
+    </header>
+
+    <section id="seccion1">
+        <form id="formDatos">
+            <div id="div2">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+
+                <label for="ruc">Ruc:</label>
+                <input type="text" id="ruc">
+            </div>
+
+
+            <div id="div3">
+
+                <label for="fecha">Fecha:</label>
+                <input type="text" id="fecha">
+
+                <label for="nro">Nro:</label>
+                <input type="text" id="nro">
+            </div>
+    </section>
+
+    <section>
+
+        <div id="divm">
+
+            <span>Cantidad</span>
+            <input type="text" id="cantidad" class="inputb">
+
+            <span>Descripcion</span>
+            <input type="text" id="descripcion" class="inputb">
+
+            <span>P.Unida</span>
+            <input type="text" id="unida" class="inputb">
+
+            <span>P. Total</span>
+            <input type="text" id="total" disabled="disabled" class="inputb">
+
+            <button type="submit">Mostrar Tabla</button>
+
+        </div>
+        </form>
+
+
+        <div id="division2">
+            <table border="1" class="cinereousTable">
+
+                <thead>
+                    <tr>
+                        <th>Cantidad</th>
+                        <th>Descripcion</th>
+                        <th>P. Unidad</th>
+                        <th>P. Total</th>
+                    </tr>
+                </thead>
+
+                <tbody id="cuerpo">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total:</td>
+                        <td id="tfoot"></td>
+                    </tr>
+
+                </tfoot>
+            </table>
+
+        </div>
+<div>
+    <button id="Gtodo">Guardar Todo</button>
+</div>
+
+
+
+    </section>
+
+
+    <script src="./ejemplo.js"></script>
+
+</body>
+
+</html>

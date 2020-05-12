@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header {
+  height: 10vh;
+  text-align: center;
+  padding-top: 3px;
+  border-bottom: 5px dotted cornflowerblue;
+  font-size: 40px;
+  color: cornflowerblue;
+  
+}
+
+
+
+#divm {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  margin: 30px 0px;
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: #1F2739;
+}
+
+/*ESTATICOS*/
+#nombre, #ruc, #fecha, #nro {
+  width: 60vh;
+  height: 30px;
+  margin:0px 10px;
+  background-color: #4B4F52;
+  color: beige;
+}
+
+#div2, #div3 {
+  display: flex; 
+  justify-content: center;
+align-content: center;
+  margin: 10px 0px;
+  color: beige;
+}
+
+
+
+
+
+
+/*              TABLA         */
+
+#division2 {
+  display: flex;
+  justify-content: center;
+}
+
+.cinereousTable {
+  background-color: #1F2739;
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #1F2739;
+}
+
+.cinereousTable td, .cinereousTable th {
+  padding: 4px 4px;
+  border: 1px solid #1F2739;
+}
+
+.cinereousTable tbody td {
+  font-size: 20px;
+  background-color: #4B4F52;
+}
+
+.cinereousTable thead {
+  /*cabecera*/
+  background-color: #1F2739;
+}
+
+.cinereousTable thead th {
+  /*th cabecera*/
+  font-size: 22px;
+  font-weight: bold;
+  color: cornflowerblue;
+  text-align: center;
+  border: 1px solid #1F2739;
+}
+
+.cinereousTable tfoot {
+  font-size: 16px;
+  font-weight: bold;
+  color: #F0F0F0;
+  background-color: #948473;
+}
+
+.cinereousTable tfoot td {
+  font-size: 16px;
+}
