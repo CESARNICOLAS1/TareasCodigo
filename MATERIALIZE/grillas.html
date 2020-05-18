@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+#soyundiv>div{
+    background-color: cornflowerblue;
+    border: 1px solid red;
+}
+
+#soyundiv2{
+    background-color:darkcyan !important;
+    border: 1px solid blue !important;
+}
+        
+    </style>
+</head>
+
+<body>
+<!-- row para especificar las filas,col para columnas,s1=small-1 medida de la columna 
+s1=Cuando la pantalla sea menor que 600px pequeña medira 1 de peso 
+m1=cuando la pantalla sea mayor que 600 px mediana medira 1 de peso
+l1=cuando la pantalla sea mayo que 992px grande medira 1 de peso 
+xl=cuando la pantalla sea mayo que 1200px extra grande medira 1 de peso 
+col s12   solo poner eso es lo mismo que decir =>   col s12 m12 l12
+-->
+<main class="container-fluid">
+    <div class="row" id="soyundiv">
+        <div class="col s1">Peso 1 en small</div>
+        <div class="col s1">Si no me declaran</div>
+        <div class="col s1">Cuanto mido en medio</div>
+        <div class="col s1">o mas</div>
+        <div class="col s1">seguire ocupando</div>
+        <div class="col s1">un peso</div>
+        <div class="col s1">de 1</div>
+        <div class="col s1">height auto</div>
+        <div class="col s4">:D</div>
+        <div class="col s12">Soy una columna de 12 de peso</div>
+        <div class="col s2 m4 l6">peso 6 en large,4 medio,2 small</div>
+        <div class="col s2 m4 l6">peso 6 en large,4 medio,2 small</div>
+<!-- la clase flow text agrega responsivo pero al texto,se achica o agranda cuando la pantalla crece o baja -->
+        <div class="col s12"><span class="flow-text">s12 en todas las pantallas</span></div>
+<!-- offset=compensar espacio,en boostrap teniamos que poner div vacios con col-6 o justify-content-end
+ pero con offset llena ese espacio vacio -->
+        <div class="col s6 offset-s6"><span class="flow-text">6-columns (offset-by-6)</span></div>
+        
+<!-- como float solo que por columnas, push movemos el elemento ala derecha x columnas,pull x columnas ala izqueirda -->
+        <div class="col s7 push-s5"><span class="flow-text">7-columns llevadas ala derecha por 5columns.</span></div>
+        <div class="col s5 pull-s7"><span class="flow-text">5-columns wide pulled to the left by 7-columns.</span></div>    
+
+      </div>
+<!-- PARA LA CREACION DE DISEÑOS -->
+<!-- usamos la clase divider agrega un pixel de margen para que funcione como un hr,la clase section en al creacion de diseños
+en esta puedes tener mucho contenido y a diferencia de un div normal este tiene un pading personalizado para mejor diseño  -->
+      <div class="divider" id="soyundiv2"></div>
+      <div class="section" id="soyundiv2">
+        <h5>Section 1</h5>
+        <p>Stuff</p>
+      </div>
+      <div class="divider" id="soyundiv2"></div>
+      <div class="section" id="soyundiv2">
+        <h5>Section 2</h5>
+        <p>Stuff</p>
+      </div>
+      <div class="divider" id="soyundiv2"></div>
+
+    </main>
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!--Import materialize.css-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+       <!--Import Google Icon Font-->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <!--Let browser know website is optimized for mobile-->
+       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>Document</title>
+</head>
+<body>
+
+
+<main class="container">
+
+<!--                            SELECT                       -->
+<!-- SOLO MODIFICAR EL TEXTO O AÑADIR LOS OPTION PARA MODIFICARLOS,ES NECESARIO INICIALIZARLOS EN JS -->
+
+<div class="row">
+    <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+        <label>Materialize Select</label>
+      </div>
+    
+      <div class="input-field col s12">
+        <select multiple>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+        <label>Materialize Multiple Select</label>
+      </div>
+    
+      <div class="input-field col s12">
+        <select>
+          <optgroup label="team 1">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </optgroup>
+          <optgroup label="team 2">
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </optgroup>
+        </select>
+        <label>Optgroups</label>
+      </div>
+    
+      <div class="input-field col s12 m6">
+        <select class="icons">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="" data-icon="http://placehold.it/40x40">example 1</option>
+          <option value="" data-icon="http://placehold.it/40x40">example 2</option>
+          <option value="" data-icon="http://placehold.it/40x40">example 3</option>
+        </select>
+        <label>Images in select</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <select class="icons">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="" data-icon="http://placehold.it/40x40" class="left">example 1</option>
+          <option value="" data-icon="http://placehold.it/40x40" class="left">example 2</option>
+          <option value="" data-icon="http://placehold.it/40x40" class="left">example 3</option>
+        </select>
+        <label>Images in select</label>
+      </div>
+    
+      <label>Browser Select</label>
+      <select class="browser-default">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+
+      <div class="input-field">
+        <select disabled>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+        <label>Materialize Disabled</label>
+      </div>
+</div>
+
+<!--                            CARRUSEL                        -->
+
+<div class="row">
+<div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="http://placehold.it/40x40"></a>
+    <a class="carousel-item" href="#two!"><img src="http://placehold.it/40x40"></a>
+    <a class="carousel-item" href="#three!"><img src="http://placehold.it/40x40 "></a>
+    <a class="carousel-item" href="#four!"><img src="http://placehold.it/40x40"></a>
+    <a class="carousel-item" href="#five!"><img src="http://placehold.it/40x40"></a>
+  </div>
+
+
+</div>
+
+
+    <!--DOCUMENTACION 
+LOS CARD VERTICALES SE COMPONEN DE 3 DIV CUANDO SE LES DECLARA:
+CARD-IMAGE(imagen),CARD-CONTENT(contenido),CARD-ACTION(botones)
+LOS CARD CON TABS NECESITAN SER INICIALIZADOS EN JS Y USAR JQUERY AL COMIENZO
+ -->
+<!--                                        CARDS                                    -->
+<!-- CARD COMUN -->
+      <div class="row">
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image">
+              <img src="http://placehold.it/250x100">
+              <span class="card-title">Card Title</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      
+<!-- CARD HORIZONTAL -->
+
+      <div class="col s6">
+        <h2 class="header">Horizontal Card</h2>
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="https://lorempixel.com/100/190/nature/6">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>card horizontal,me uso para mostrar POCA informacion.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+<!-- CARD CON TABS -->
+<div class="row">
+    <div class="col s6 ">
+    <div class="card">
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-tabs">
+          <ul class="tabs tabs-fixed-width">
+            <li class="tab"><a href="#test4">Test 1</a></li>
+            <!-- CON ACTIVE LE DECIMOS QUE AL CARGAR LA PAGINA ESTE SE MOSTRARA POR DEFECTO -->
+            <li class="tab"><a class="active" href="#test5">Test 2</a></li>
+            <li class="tab"><a href="#test6">Test 3</a></li>
+          </ul>
+        </div>
+        <div class="card-content grey lighten-4">
+          <div id="test4">Test 1</div>
+          <div id="test5">Test 2</div>
+          <div id="test6">Test 3</div>
+        </div>
+      </div>
+
+    </div>
+
+<!-- CARD DESPLEGABLE CON EFECTO -->
+  <div class="col s6">
+      <div class="card ">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="http://placehold.it/250x100">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+  </div>
+</div>
+
+</div>
+
+
+
+</main>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+<script src="./input,carrusel,cards.js"></script>
+</body>
+</html>

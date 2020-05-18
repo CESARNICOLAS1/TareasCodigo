@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    #soyundiv {
+      background-color: cornflowerblue;
+      border: 1px solid red;
+    }
+
+    #soyundiv2 {
+      background-color: darkcyan !important;
+      border: 3px solid blue !important;
+    }
+  </style>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <main class="container-fluid">
+    <!-- 
+hide-on-med-and-down  se pone hidden cuando es menor que 992px  
+brand-logo:           da estilo
+sidenav-trigger       cuando la medida es mayor de 993px estara en display none,pero cuando sea menor
+                      pasara a ser un objeto flotante a la izquierda
+sidenav               barra de navegacion izquierda que esta escondida por default
+ -->
+
+    <!--                  NAVBAR RESPONSIVO,SIDEBAR CUANDO SE ACHICA                      -->
+    <div class="row">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Logo</a>
+          <!-- cuando la pantalla es mayor 993 se ocultara pero cuando es menor se mostrara -->
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <!-- esto se muestra primero cuando la pantalla es mayor de 992 y si es menor se escondera -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- con el datatarget y el id de este se enlazan,la clase sidenav por defaul esta escondida pero al 
+activar el sidenav-trigger hace que aparesca con efecto -->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+
+    </div>
+
+    <!--                      SIDEBAR A UN BOTON                  -->
+    <!-- RECORDAR USAR LAS LIBRERIAS  -->
+    <div class="row">
+      <!--  SI AGREGAMOS sidenav-fixed SE QUEDA SIEMPRE VISIBLE PERO ESTO OCUPARA ESPACIO ,usar offset para solucionar -->
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background"><img src="http://placehold.it/300x160"></div>
+            <a href="#user"><img class="circle" src="http://placehold.it/50x50"></a>
+            <a href="#name"><span class="white-text name">John Doe</span></a>
+          </div>
+        </li>
+
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#!">Firs1t</a></li>
+                  <li><a href="#!">Second</a></li>
+                  <li><a href="#!">Third</a></li>
+                  <li><a href="#!">Fourth</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger right "><i class="material-icons">menu</i></a>
+
+
+    </div>
+    
+
+
+
+    <!-- DOCUMENTACION
+highlight                       ILUMINA CON HOVER AL PASAR
+centered                        CENTRA EL TEXTO
+responsive-table                HACE RESPONSIVA LA TABLA
+striped                          SE COLOREAN LOS IMPARES
+
+center                          ALINEA TEXTO
+pagination pager                PAGINA,USA TODO EL DIV TAL COMO ESTA CON SUS CLASES YA QUE SON MODIFCADAS
+-->
+
+    <!--                                                       DISEÑO TABLAS                             -->
+
+    <div class="row">
+      <div class="col s12">
+        <table class="striped centered highlight responsive-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alvin</td>
+              <td>Eclair</td>
+              <td>$0.87</td>
+            </tr>
+            <tr>
+              <td>Alan</td>
+              <td>Jellybean</td>
+              <td>$3.76</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!--                                                          PAGINACION                                                  -->
+    <div class="row">
+      <div class="col s12">
+        <table cellpadding="1" cellspacing="1" class="highlight" id="myTable">
+          <thead>
+            <th>inicio</th>
+            <th>hola</th>
+            <th>mundo</th>
+            <th>fin</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>111111111</td>
+              <td>22222222</td>
+              <td>333333</td>
+              <td>4444444</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- USAR ESTE FORMATO EN PAGINACION CON MATERIALIZE Y SE MODIFICA LOS ELEMENTOS DENTRO DEL SCRIPT de abajo-->
+      <div class="col s12 center text-center" id="soyundiv" style="height: 50px;">
+        <span class="left" id="total_reg"></span>
+        <ul class="pagination pager" id="myPager"></ul>
+      </div>
+
+    </div>
+  </main>
+
+
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  
+  <!-- SCRIPT PARA HACER UNA PAGINACION EN UNA TABLA -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <!-- LINEA 31 CAMBIAMOS EL TEXTO QUE APARECE EN LA TABLA -->
+  <script type="text/javascript" src="https://cdn.rawgit.com/pinzon1992/materialize_table_pagination/f9a8478f/js/pagination.js"></script>
+
+
+
+
+
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./navbar,sidebar,tabla,paginacion.js"></script>
+
+</body>
+
+</html>

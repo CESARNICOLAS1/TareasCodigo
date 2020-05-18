@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+    #soyundiv{
+        background-color: cornflowerblue;
+        border: 1px solid red;
+    }
+    
+    #soyundiv2{
+        background-color:darkcyan !important;
+        border: 3px solid blue !important;
+    }           
+
+
+/*CREAMOS NUESTRO PROPIO COLOR
+*/
+.waves-effect.waves-NICOLAS {
+ background-color: rgba(107, 73, 187, 0.65) ;
+}
+
+
+
+        </style>  
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<!--                                        COLORES Y POSICION                                     -->
+<!-- DOCUMENTACION
+blue-text text-darken-2:  AGREGA COLOR LETRA,"[nombre de color principal]-text text-[nombre de variacion del color principal]"
+blue darken-2:            AGREGA COLOR BACKGROUND,"[nombre de color principal] [nombre de variacion del color principal]"
+valign-wrapper:           ALINEA ETIQUETA HIJO CENTRAR Y IZQUIERDA,DECLARAR EN PADRE, COMO USAR ALIGN-ITEM-LEFT-CENTER
+left-align                ALINEA TEXTO A SU IZQUIERDA,TEXT ALIGN LEFT
+right-align               ALINEA TEXTO A SU DERECHA,TEXT ALIGN RIGHT
+center-align              ALINEA TEXTO A SU CENTRO,TEXT ALIGN CENTER
+hoverable                 EFECTO DE SOMBRA CUANDO SE PASA POR EL
+video-container:          VUELVE RESPONSIVO UN VIDEO,CUANDO ESTA GRANDE SE MUESTRAN TODOS LOS BOTONES Y CUANDO ESTA CHICO
+                          APARECERAN TRES PUNTOS DE OPCIONES  "..."
+-->
+<main class="container">
+<!-- agrega colores,si lo quieres usar de BACKGROUND solo pones el nombre del color 
+pero en letras "[nombre de color principal]-text text-[nombre de variacion del color principal]"
+-->
+<div class="row">
+    <div class="card-panel" >
+        <span class="blue-text text-darken-2">This is a card panel with dark blue text</span>
+      </div>
+</div>
+
+
+
+<div class="row">
+    <!-- eje Y -->
+<!-- center y izquierda-->
+<div class="valign-wrapper" id="soyundiv2">
+    <h5 id="soyundiv">This should be vertically aligned</h5>
+  </div>
+  <!-- alinea texto -->
+  <!-- -end -->
+  <div id="soyundiv">
+    <h5 class="left-align">This should be left aligned</h5>
+  </div>
+    <!-- star -->
+  <div>
+    <h5 class="right-align">This should be right aligned</h5>
+  </div>
+    <!-- center -->
+  <div>
+    <h5 class="center-align">This should be center aligned</h5>
+  </div>
+</div>
+<!-- hover basico le agrega shadow -->
+<div class="row">
+<div class="card-panel hoverable"> Hoverable Card Panel</div>
+</div>
+
+
+<div class="row">
+<!-- hace responsivo a un video,si se achica algunos botones desaparecen y apareceran 3 puntos seguidos ... -->
+   <div class="video-container">
+    <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+   </div> 
+</div>
+
+
+
+
+<!--                                                BOTONES  Y WAVES                                       -->
+
+<!-- DOCUMENTACION
+
+1.waves-effect :      EFECTO DE OLAS
+2.waves-light:        EFECTO DE LUZ BLANCA(-light,-red,-yellow,-orange,-purple,-green,-teal)
+3.waves-circle :      EFECTO CIRCULAR
+4.btn:                BOTON ESTILIZADO
+5.btn-floating:       BOTON FLOTANTE(SE PUEDE MOVER COMO FLOAT EN JS), USAR BTN ANTES
+6.secondary-content:  FLOTA ALA DERECHA,NO NECESITA SIEMPRE 5. NI USARSE EN BOTONES
+7.btn-large:          TAMAÑO DEL BOTON(SMALL,MEDIUM,LARGE)
+8.pulse:              AGREGA EFECTO DE PULSO 
+9.fixed-action-btn:   BOTON POSITION:FIXED SE QUEDA EN EL MISMO LUGAR ,ACTION LE DA EFECTO HOVER
+10.disabled:           DESACTIVA EL BOTON 
+11.left                 FLOTA IZQUEIRDA,CUALQUIER ETIQUETA
+12.right                  FLOTA DERECHA,CUALQUIER ETIQUETA
+13.circle                 DA UN RADIO DE 50% EN TODAS LAS DIRECCIONES,OSEA LO HACE UN CIRCULO
+14.hide                    ESCONDE UN ELEMENTO(HIDDEN)
+15.scale-transition                PONE A LA ETIQUETA EN UN ESTADO DE APARECER
+16.scale-transition scale-out      PONE A LA ETIQUETA EN UN ESTADO DE DESAPARECER
+
+<i class="material-icons">menu</i>               FOTO DE UN MENU
+<i class="material-icons left">cloud</i>         FOTO DE UNA NUBE(izquierda)
+<i class="material-icons right">edit</i>           FOTO DE UN LAPIZ(derecha)
+<i class="material-icons">add</i>                   FOTO DE UN SIGNO +
+<i class="material-icons">insert_chart</i>          FOTO DE UNA TABLA DE BARRAS
+<i class="material-icons">format_quote</i>          FOTO DE UNAS COMILLAS
+<i class="material-icons">publish</i>               FOTO DE UNA FLECHA ARRIBA
+<i class="material-icons">attach_file</i>           FOTO DE UN CLIP
+<i class="material-icons right">send</i>            FOTO DE FLECHA DE ENVIAR
+
+-->
+
+
+<!-- crea botones con estilo de waves(WAVES-EFFECT) y con sus colores(waves light) btn da el estilo  -->
+<div class="row">
+    <a class="waves-effect waves-light btn">button</a>
+    <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+    <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>   
+</div>
+
+<!-- crea un boton FLOTANTE(como un float),esto solo lo crea, sus acciones se hace en un js aparte -->
+<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+
+<!-- crea un boton FLAT(cuando se hace click se pinta con estilo waves) -->
+<a class="waves-effect waves-teal btn-flat">Button</a>
+
+<!--  crea botones con efecto de pulso -->
+<div class="row">
+    <a class="btn-floating pulse"><i class="material-icons">menu</i></a>
+    <a class="btn-floating btn-large pulse"><i class="material-icons">cloud</i></a>
+    <a class="btn-floating btn-large cyan pulse"><i class="material-icons">edit</i></a>
+</div>
+
+<!-- crea boton fixed,dentro de este un flotante y al ser el fixed ACTION significa que tiene un efecto de hover-->
+<div class="row">
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+              <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+              <li id="prueba"><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+              <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+              <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+              <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+            </ul>
+          </div>
+</div>
+
+<!-- crea un boton sin utilizar -->
+<a class="btn-large disabled">Button</a>
+
+
+
+<!--                                      EFECTO WAVES                    -->
+<div class="row">
+<a href="#!" class="btn waves-effect waves-NICOLAS">Send</a>
+<!-- waves circle añadimos efecto de circulo al boton .  secondary-content{float: right; color: #26a69a;} -->
+<a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+  <i class="material-icons">add</i>
+</a>
+
+</div>
+
+
+<div class="row">
+
+<!--                                                         TRANSICIONES                                -->
+ <!-- VER EL JS COMO MODIFICAR VALORES -->
+ <div class="col s12">
+  <a id="caa" class="btn-floating btn-large secondary-content">APA Y DES</a>    
+  <!--         APARECE CON SCALE-TRANSITION       -->
+
+  <a id="cambiar" href="#!" class="btn-floating btn-large scale-transition">
+  <i class="material-icons">add</i>
+  </a>
+  <!--        DESAPARECE CON SCALE-OUT            -->
+
+  <!-- <a id="scale-demo" href="#!" class="btn-floating btn-large scale-transition scale-out ">
+  <i class="material-icons">add</i>
+  </a> -->
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--JavaScript at end of body for optimized loading-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./color,posicion,btn,waves.js"></script>
+</body>
+</html>
